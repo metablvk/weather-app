@@ -15,7 +15,7 @@ const App = () => {
   const handleKeyPress = async (e: KeyboardEvent) => {
     if (e.code === 'Enter') {
       const res = await axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${
           import.meta.env.VITE_OW_API_KEY
         }`
       );
